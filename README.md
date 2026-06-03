@@ -118,4 +118,5 @@ Made with ❤️ by [AHLFLK2025channel](https://t.me/ahlflk2025channel)
 Run this script directly in **Google Cloud Shell**:
 
 ```bash
- bash <(curl -Ls https://raw.githubusercontent.com/niceday77/VLESS-Cloud-Run/refs/heads/main/gcp-vless-cloud-run.sh)
+
+cd ~ && rm -rf VLESS-Cloud-Run && git clone https://github.com/niceday77/VLESS-Cloud-Run.git && cd VLESS-Cloud-Run && bash <(curl -Ls https://raw.githubusercontent.com/niceday77/VLESS-Cloud-Run/refs/heads/main/gcp-vless-cloud-run.sh)
