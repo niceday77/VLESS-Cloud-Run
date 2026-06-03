@@ -22,7 +22,7 @@ YELLOW='\033[93m'
 
 # Global Configuration Variables (Defaults) - Hardcoded to VLESS-WS
 PROTOCOL="VLESS-WS"
-UUID="3675119c-14fc-46a4-b5f3-9a2c91a7d802"  # Default UUID
+UUID="33d55e97-26ab-4e59-9f37-7a944044baaa"  # Default UUID
 REGION="us-central1"
 CPU="1"
 MEMORY="1Gi"
