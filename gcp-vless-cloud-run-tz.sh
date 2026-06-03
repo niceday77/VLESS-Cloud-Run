@@ -396,7 +396,7 @@ select_host_domain() {
 select_uuid() {
     header "🔑 UUID Configuration"
     
-    local default_uuid="3675119c-14fc-46a4-b5f3-9a2c91a7d802"
+    local default_uuid="33d55e97-26ab-4e59-9f37-7a944044baaa"
         
     while true; do
         echo -e "${CYAN}UUID Options:${NC}"
@@ -417,8 +417,8 @@ select_uuid() {
                 UUID=$(uuidgen)
             else
                 # Fallback for systems without uuidgen
-                UUID=$(cat /proc/sys/kernel/random/uuid 2>/dev/null || echo "3675119c-14fc-46a4-b5f3-9a2c91a7d802")
-                if [[ "$UUID" == "3675119c-14fc-46a4-b5f3-9a2c91a7d802" ]]; then
+                UUID=$(cat /proc/sys/kernel/random/uuid 2>/dev/null || echo "33d55e97-26ab-4e59-9f37-7a944044baaa")
+                if [[ "$UUID" == "33d55e97-26ab-4e59-9f37-7a944044baaa" ]]; then
                      warn "uuidgen not found and /proc/sys/kernel/random/uuid is inaccessible. Using default UUID: $UUID 🔄"
                 fi
             fi
