@@ -121,6 +121,16 @@ Run this script directly in **Google Cloud Shell**:
 
 cd ~ && rm -rf VLESS-Cloud-Run && git clone https://github.com/niceday77/VLESS-Cloud-Run.git && cd VLESS-Cloud-Run && bash <(curl -Ls https://raw.githubusercontent.com/niceday77/VLESS-Cloud-Run/refs/heads/main/gcp-vless-cloud-run.sh)
 
+---
+
+## #Crd
+
+---
+
 ## 🚀 Cloud Run One-Click with the Virtual meters
+
+Run this script directly in **Google Cloud Shell**:
+
+```bash
 
 cd ~ && rm -rf VLESS-Cloud-Run && git clone https://github.com/niceday77/VLESS-Cloud-Run.git && cd VLESS-Cloud-Run && bash <(curl -Ls https://raw.githubusercontent.com/niceday77/VLESS-Cloud-Run/refs/heads/main/gcp-vless-cloud-run2.sh)
