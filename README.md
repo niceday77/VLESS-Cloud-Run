@@ -19,48 +19,6 @@ This project allows you to deploy a **VLESS proxy** server over **WebSocket** us
 - ❌ Google Cloud IPs starting with `34.*` and `35.*` **do NOT work** reliably with V2Ray/VLESS.
 - ✅ Use a **custom domain with HTTPS** via **Google Load Balancer + CDN** for proper functionality.
 
----
-
-## 🐳 Docker Deployment
-
-### Step 1: Build Docker Image
-
-```bash
-docker build -t gcr.io/YOUR_PROJECT_ID/vless-ws .
-```
-
-### Step 2: Push to Container Registry
-
-```bash
-docker push gcr.io/YOUR_PROJECT_ID/vless-ws
-```
-
-### Step 3: Deploy to Google Cloud Run
-
-```bash
-gcloud run deploy vless-ws \
-  --image gcr.io/YOUR_PROJECT_ID/vless-ws \
-  --platform managed \
-  --region us-central1 \
-  --allow-unauthenticated \
-  --port 8080
-```
-
-> ☑️ Make sure to allow **unauthenticated access**.
-
----
-
-## 🌐 Setup Google CDN + Load Balancer
-
-1. Go to **Google Cloud Console > Network services > Load balancing**
-2. Create a new **HTTP(S) Load Balancer**
-3. Add your **Cloud Run service** as a backend
-4. **Enable CDN** on the backend
-5. Attach a **custom domain** and **SSL certificate**
-
-> 🔒 HTTPS is handled by Google; no need to configure TLS in Xray.
-
----
 
 ## 📲 Client Configuration (V2Ray, Xray)
 
@@ -88,27 +46,6 @@ Use the following settings in your client app:
 
 ---
 
-## 🛡 Tips for Better Stealth
-
-* Use random UUIDs and WS paths
-* Combine with Cloudflare DNS and proxy
-* Rotate domains if needed
-* Enable logs in debug environments only
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 👤 Author
-
-Made with ❤️ by [AHLFLK2025channel](https://t.me/ahlflk2025channel)
-
----
-
 ## #Crd
 
 ---
@@ -120,17 +57,3 @@ Run this script directly in **Google Cloud Shell**:
 ```bash
 
 cd ~ && rm -rf VLESS-Cloud-Run && git clone https://github.com/niceday77/VLESS-Cloud-Run.git && cd VLESS-Cloud-Run && bash <(curl -Ls https://raw.githubusercontent.com/niceday77/VLESS-Cloud-Run/refs/heads/main/gcp-vless-cloud-run.sh)
-
----
-
-## #Crd
-
----
-
-## 🚀 Cloud Run One-Click with the Virtual meters
-
-Run this script directly in **Google Cloud Shell**:
-
-```bash
-
-cd ~ && rm -rf VLESS-Cloud-Run && git clone https://github.com/niceday77/VLESS-Cloud-Run.git && cd VLESS-Cloud-Run && bash <(curl -Ls https://raw.githubusercontent.com/niceday77/VLESS-Cloud-Run/refs/heads/main/gcp-vless-cloud-run2.sh)
