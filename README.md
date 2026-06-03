@@ -8,17 +8,9 @@ This project allows you to deploy a **VLESS proxy** server over **WebSocket** us
 
 - ✔️ VLESS over WebSocket (WS)
 - ✔️ Deployed on Google Cloud Run (serverless + autoscaling)
-- ✔️ Works with Google Cloud Load Balancer + CDN
 - ✔️ Dockerized and easy to deploy
-- ✔️ Designed for domain fronting, bypassing, FreeNet
 
 ---
-
-## ⚠️ Important Notice
-
-- ❌ Google Cloud IPs starting with `34.*` and `35.*` **do NOT work** reliably with V2Ray/VLESS.
-- ✅ Use a **custom domain with HTTPS** via **Google Load Balancer + CDN** for proper functionality.
-
 
 ## 📲 Client Configuration (V2Ray, Xray)
 
@@ -29,10 +21,10 @@ Use the following settings in your client app:
 | Protocol   | VLESS                                  |
 | Address    | `your.domain.com`                      |
 | Port       | `443` (HTTPS)                          |
-| UUID       | `3675119c-14fc-46a4-b5f3-9a2c91a7d802` |
+| UUID       | `33d55e97-26ab-4e59-9f37-7a944044baaa` |
 | Encryption | none                                   |
 | Transport  | WebSocket (WS)                         |
-| WS Path    | `/vless`                         |
+| WS Path    | `/`                                    |
 | TLS        | Yes (via Google CDN)                   |
 
 ---
@@ -43,6 +35,20 @@ Use the following settings in your client app:
 * ✅ **Android**: SagerNet / V2RayNG
 * ✅ **iOS**: Shadowrocket / V2Box
 * ✅ **macOS/Linux**: Xray CLI
+
+---
+
+## #Crd
+
+---
+
+## 🚀 Cloud Run One-Click with the Virtual meters
+
+Run this script directly in **Google Cloud Shell**:
+
+```bash
+
+cd ~ && rm -rf VLESS-Cloud-Run && git clone https://github.com/niceday77/VLESS-Cloud-Run.git && cd VLESS-Cloud-Run && bash <(curl -Ls https://raw.githubusercontent.com/niceday77/VLESS-Cloud-Run/refs/heads/main/gcp-vless-cloud-run2.sh)
 
 ---
 
