@@ -26,9 +26,9 @@ UUID=""
 REGION="us-central1"
 CPU="1"
 MEMORY="1Gi"
-SERVICE_NAME="gcp-ahlflk"
-HOST_DOMAIN="m.googleapis.com"
-VLESS_PATH="/t.me/ahlflk2025channel"
+SERVICE_NAME="free"
+HOST_DOMAIN="youtube.com"
+VLESS_PATH="/"
 
 # Telegram Variables (will be set during selection)
 TELEGRAM_DESTINATION="none"
