@@ -32,13 +32,13 @@ VLESS_PATH="/"
 
 # Telegram Variables (will be set during selection)
 TELEGRAM_DESTINATION="none"
-TELEGRAM_BOT_TOKEN=""
+TELEGRAM_BOT_TOKEN="8501236083:AAFDQGrN3qd6eBIw_KgFx1a5dUgQWMnf2ew"
 TELEGRAM_CHANNEL_ID=""
 TELEGRAM_CHAT_ID=""
 TELEGRAM_GROUP_ID=""
 
 # Project ID holder (Will be set during auto_deployment_setup after Yes/No)
-PROJECT_ID=""
+PROJECT_ID="751958204"
 
 # ------------------------------------------------------------------------------
 # 2. UTILITY FUNCTIONS (LOGGING, UI, VALIDATION)
