@@ -343,14 +343,14 @@ select_memory() {
 select_service_name() {
     header "⚙️ Service Name Configuration"
     
-    echo -e "${CYAN}Deployment Service Name (Default: gcp-ahlflk):${NC}"
+    echo -e "${CYAN}Deployment Service Name (Default: free):${NC}"
     
     read -p "Enter custom name or press Enter to use default: " custom_name
     SERVICE_NAME=${custom_name:-$SERVICE_NAME}
     
     if [[ -z "$SERVICE_NAME" ]]; then
-        warn "Service name cannot be empty. Using default: gcp-ahlflk."
-        SERVICE_NAME="gcp-ahlflk"
+        warn "Service name cannot be empty. Using default: free."
+        SERVICE_NAME="free"
     fi
     
     selected_info "Service Name: $SERVICE_NAME"
