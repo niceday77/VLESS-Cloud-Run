@@ -36,23 +36,15 @@ Use the following settings in your client app:
 * ✅ **iOS**: Shadowrocket / V2Box
 * ✅ **macOS/Linux**: Xray CLI
 
----
-
-## #Crd
-
----
 
 ## 🚀 Cloud Run One-Click with the Virtual meters
 
 Run this script directly in **Google Cloud Shell**:
 
-```bash
-
 cd ~ && rm -rf VLESS-Cloud-Run && git clone https://github.com/niceday77/VLESS-Cloud-Run.git && cd VLESS-Cloud-Run && bash <(curl -Ls https://raw.githubusercontent.com/niceday77/VLESS-Cloud-Run/refs/heads/main/gcp-vless-cloud-run2.sh)
 
----
 
-## #Crd2
+## #Crd
 
 ---
 
