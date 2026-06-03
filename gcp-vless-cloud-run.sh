@@ -361,14 +361,14 @@ select_service_name() {
 select_host_domain() {
     header "🌐 Host Domain Configuration"
     
-    echo -e "${CYAN}SNI/Host Domain (Default: m.googleapis.com):${NC}"
+    echo -e "${CYAN}SNI/Host Domain (Default: youtube.com):${NC}"
     
     read -p "Enter custom domain or press Enter to use default: " custom_domain
     HOST_DOMAIN=${custom_domain:-$HOST_DOMAIN}
     
     if [[ -z "$HOST_DOMAIN" ]]; then
-        warn "Host Domain cannot be empty. Using default: m.googleapis.com."
-        HOST_DOMAIN="m.googleapis.com"
+        warn "Host Domain cannot be empty. Using default: youtube.com."
+        HOST_DOMAIN="youtube.com"
     fi
     
     selected_info "Host Domain: $HOST_DOMAIN"
